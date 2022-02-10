@@ -1,0 +1,10 @@
+# instructions
+Generate a word
+an user kan create words based on the letters of the words
+het gets points based on the length of the word
+Words must me valid (must also be contained in a predefined text file)
+
+# ideas
+create a map of the word as wordletters and amount in word
+create a map of the user word as wordletters and amount in word
+validate if the key excist in the word and then if it's value is equal or lower then the word value

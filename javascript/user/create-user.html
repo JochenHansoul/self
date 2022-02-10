@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>create user</title>
+  <link href="css/index.css" rel="stylesheet" />
+  <script type="module" src="js/create-user.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="create-user.html">create user</a></li>
+        <li><a href="get-user.html">get user</a></li>
+        <li><a href="update-user.html">update user</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>create user</h1>
+    <form name="user" action="http://localhost:3000/user" method="POST">
+      <p>
+        <label>first name: <input name="firstName" value="first1" required /></label>
+      </p>
+      <p>
+        <label>last name: <input name="lastName" value="last1" required /></label>
+      </p>
+      <p>
+        <label>gender:
+          <input type="radio" name="gender" value="UNKNOWN" checked />unknown
+          <input type="radio" name="gender" value="MALE" />male
+          <input type="radio" name="gender" value="FEMALE" />female
+          <input type="radio" name="gender" value="OTHER" />other
+        </label>
+      </p>
+      <!--<p>
+        <label>email: <input type="email" name="emailAddress" value="first.last@outlook.be" required /></label>
+        <label>email descrpiton: <input type="textfield" name="emailDescription" /></label>
+      </p>-->
+      <p>
+        <label>password: <input type="password" name="password" value="passw1" required /></label>
+      </p>
+      <p>
+        <button type="button" id="submit-button">Submit</button>
+      </p>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>get user</title>
+  <link href="css/index.css" rel="stylesheet" />
+  <script type="module" src="js/get-user.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="create-user.html">create user</a></li>
+        <li><a href="get-user.html">get user</a></li>
+        <li><a href="update-user.html">update user</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>get user</h1>
+    <form name="user" action="http://localhost:3000/user" method="GET">
+      <p>
+        <label>id: <input type="number"  name="id" value="1" required /></label>
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </main>
+</body>
+</html>
