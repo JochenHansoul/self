@@ -1,6 +1,6 @@
 "use strict";
 
-export const getFormObject = form => {
+const getFormObject = form => {
     const inputs = form.getElementsByTagName("input")
     return Array.prototype.slice.call(inputs).reduce(
         (obj, tag) => {
