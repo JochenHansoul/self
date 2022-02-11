@@ -11,10 +11,9 @@ const printError = x => console.log(x);
 // constants
 const USER_FORM = document.forms.user;
 
-//main
-USER_FORM.addEventListener("submit", event=> {
+// main
+USER_FORM.addEventListener("submit", event => {
   const obj = getFormObject(USER_FORM);
-  console.log(obj);
   sendGet(
     USER_FORM.action + "/" + obj.id,
     printResponse,
