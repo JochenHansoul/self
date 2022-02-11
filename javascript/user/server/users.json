@@ -76,6 +76,20 @@
       "gender": "UNKNOWN",
       "password": "passw1",
       "id": 11
+    },
+    {
+      "firstName": "first1",
+      "lastName": "last1",
+      "gender": "OTHER",
+      "password": "passw1",
+      "id": 12
+    },
+    {
+      "firstName": "abc",
+      "lastName": "def",
+      "gender": "OTHER",
+      "password": "passw1",
+      "id": 13
     }
   ]
 }
