@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <title>create user</title>
   <link href="css/index.css" rel="stylesheet" />
-  <script type="module" src="js/create-user.js" defer></script>
+  <script src="js/modules/get-form-object.js" defer></script>
+  <script src="js/modules/send-post.js" defer></script>
+  <script src="js/create-user.js" defer></script>
+  <!--<script type="module" src="js/create-user.js" defer></script>-->
 </head>
 <body>
   <header>
@@ -18,7 +21,7 @@
   </header>
   <main>
     <h1>create user</h1>
-    <form name="user" action="http://localhost:3000/user" method="POST">
+    <form name="user" action="http://localhost:3000/user">
       <p>
         <label>first name: <input name="firstName" value="first1" required /></label>
       </p>
@@ -41,7 +44,7 @@
         <label>password: <input type="password" name="password" value="passw1" required /></label>
       </p>
       <p>
-        <button type="button" id="submit-button">Submit</button>
+        <button type="submit">Submit</button>
       </p>
     </form>
   </main>
