@@ -15,6 +15,14 @@ import java.util.Vector;
 public class ValidWordsImpl implements ValidWords {
 
 	Vector v = new Vector();
+    /*
+    Review:
+    All nice observations !
+    Could be better if you could also mentioned that:
+        The operation only read, so thread safe is not needed
+        in.close() should be in finally block / use try-with-resources
+        When exception is caught, the application should handle it maybe stop the execution instead of swallowing it and just print stacktrace
+    */
 	// Change v by a more descriptive variable name
 	// maybe better be a set and final
 	// example: final Set<String> VALID_WORDS = new HashSet<>();
