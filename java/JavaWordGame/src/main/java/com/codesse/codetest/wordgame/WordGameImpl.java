@@ -13,11 +13,12 @@ import java.util.stream.Collectors;
 public class WordGameImpl implements WordGame {
     private final Map<Character, Integer> WORD_MAP;
     private final ValidWords VALID_WORDS;
-    private final TreeMap<String, String> SCORE = new TreeMap<>((word1, word2) -> word2.length() - word1.length());
+    private final TreeMap<String, String> SCORE
+            = new TreeMap<>((word1, word2) -> (word1.length() == word2.length()) ? (word1.equals(word2) ? 0 : 1) : word2.length() - word1.length());
 
-    public WordGameImpl(String word, ValidWords VALID_WORDS) {
+    public WordGameImpl(String word, ValidWords validWords) {
         this.WORD_MAP = this.getWordMap(word);
-        this.VALID_WORDS = VALID_WORDS;
+        this.VALID_WORDS = validWords;
     }
 
     @Override
