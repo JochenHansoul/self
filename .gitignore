@@ -1,6 +1,7 @@
 #zelf
 .idea/
 out/
+bin/
 *.iml
 
 
