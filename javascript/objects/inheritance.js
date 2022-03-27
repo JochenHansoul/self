@@ -1,34 +1,34 @@
 "use strict";
 
-const abstractO = {
+const abstractObject = {
   abstractMethod() {
     console.log("abstract method");
   }
 };
 
-const oA = Object.setPrototypeOf({
+const objectA = Object.setPrototypeOf({
   methodA() {
     console.log("hethod A");
   }
-}, abstractO);
+}, abstractObject);
 
-const oB = Object.setPrototypeOf({
+const objectB = Object.setPrototypeOf({
   methodB() {
     console.log("hethod B");
   }
-}, abstractO);
+}, abstractObject);
 
-const oAB = Object.setPrototypeOf({
-  methodA: oA.methodA,
-  methodB: oB.methodB
-}, abstractO);
+const objectAB = Object.setPrototypeOf({
+  methodA: objectA.methodA,
+  methodB: objectB.methodB
+}, abstractObject);
 
-oA.abstractMethod();
-oA.methodA();
+objectA.abstractMethod();
+objectA.methodA();
 
-oB.abstractMethod();
-oB.methodB();
+objectB.abstractMethod();
+objectB.methodB();
 
-oAB.abstractMethod();
-oAB.methodA();
-oAB.methodB();
+objectAB.abstractMethod();
+objectAB.methodA();
+objectAB.methodB();
