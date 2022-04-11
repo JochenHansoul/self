@@ -1,0 +1,8 @@
+# first compile it:
+gfortran -c program.f
+
+# then chmod and run it:
+./program.o
+
+# then run the generated file, it's automatically executable (profit):
+./a.out
