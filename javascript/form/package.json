@@ -1,0 +1,12 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "A function that receives a form and returns an object based on the name and values of the givin form",
+  "main": "form-object.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["html5", "form", "object"],
+  "author": "Jochen Hansoul",
+  "license": "ISC"
+}
