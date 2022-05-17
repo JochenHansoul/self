@@ -1,0 +1,10 @@
+table tr td {
+  width: 200px;
+  background: green;
+  text-align: center;
+}
+
+table tr td:first-child {
+  background: red;
+  text-align: right;
+}
