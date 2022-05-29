@@ -1,0 +1,9 @@
+.tooltip {
+  display: none;
+  position: absolute;
+}
+
+.show-tooltip:hover > .tooltip,
+.tooltip:hover {
+  display: block;
+}
