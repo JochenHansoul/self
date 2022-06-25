@@ -35,6 +35,11 @@ abstract class AbstractClass
 
 class ParentClass extends AbstractClass
 {
+    static function useParent(): string
+    {
+        return parent::getClassName();
+    }
+
     static function useSelf(): string
     {
         return self::getClassName();
@@ -50,7 +55,9 @@ class ChildClass extends ParentClass {}
 
 
 // code
+echo ParentClass::useParent() . "\n";    // ParentClass
 echo ParentClass::useSelf() . "\n";      // ParentClass
 echo ParentClass::useClassName() . "\n"; // ParentClass
+echo ChildClass::useParent() . "\n";     // ChildClass
 echo ChildClass::useSelf() . "\n";       // ChildClass
 echo ChildClass::useClassName() . "\n";  // ParentClass <- not the correct classname
