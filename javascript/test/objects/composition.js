@@ -34,5 +34,5 @@ const robotDog = (name) => {
 const robotDog1 = robotDog("fido");
 console.log(robotDog1.bark());
 console.log(robotDog1.getPosition());
-robotDog1.drive(); // driver2 method is used
+robotDog1.drive(); // when two composit functions withe the same method are added the second (driver2) method is used
 console.log(robotDog1.getPosition());
